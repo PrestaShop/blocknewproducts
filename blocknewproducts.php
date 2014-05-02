@@ -35,7 +35,7 @@ class BlockNewProducts extends Module
 	{
 		$this->name = 'blocknewproducts';
 		$this->tab = 'front_office_features';
-		$this->version = '1.8';
+		$this->version = '1.9';
 		$this->author = 'PrestaShop';
 		$this->need_instance = 0;
 
