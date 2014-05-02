@@ -204,8 +204,8 @@ class BlockNewProducts extends Module
 	public function _clearCache($template, $cache_id = NULL, $compile_id = NULL)
 	{
 		parent::_clearCache('blocknewproducts.tpl');
-		parent::_clearCache('blocknewproducts_home.tpl', $this->getCacheId('blocknewproducts-home'));
-		parent::_clearCache('tab.tpl', $this->getCacheId('blocknewproducts-tab'));
+		parent::_clearCache('blocknewproducts_home.tpl', 'blocknewproducts-home');
+		parent::_clearCache('tab.tpl', 'blocknewproducts-tab');
 	}
 
 	public function renderForm()
