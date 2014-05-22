@@ -99,6 +99,7 @@ class BlockNewProducts extends Module
 				Configuration::updateValue('PS_NB_DAYS_NEW_PRODUCT', (int)(Tools::getValue('PS_NB_DAYS_NEW_PRODUCT')));
 				Configuration::updateValue('PS_BLOCK_NEWPRODUCTS_DISPLAY', (int)(Tools::getValue('PS_BLOCK_NEWPRODUCTS_DISPLAY')));
 				Configuration::updateValue('NEW_PRODUCTS_NBR', (int)($productNbr));
+				$this->_clearCache('*');
 				$output .= $this->displayConfirmation($this->l('Settings updated'));
 			}
 		}
