@@ -51,6 +51,7 @@ class BlockNewProducts extends Module
 	{
 		$success = (parent::install()
 			&& $this->registerHook('header')
+			&& $this->registerHook('leftColumn')
 			&& $this->registerHook('addproduct')
 			&& $this->registerHook('updateproduct')
 			&& $this->registerHook('deleteproduct')
