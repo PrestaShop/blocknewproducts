@@ -93,7 +93,7 @@ class BlockNewProducts extends Module
 		return $output.$this->renderForm();
 	}
 
-	private function getNewProducts()
+	protected function getNewProducts()
 	{
 		if (!Configuration::get('NEW_PRODUCTS_NBR'))
 			return;
