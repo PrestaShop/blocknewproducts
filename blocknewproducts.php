@@ -105,7 +105,7 @@ class BlockNewProducts extends Module
 			'actionProductListModifier',
 			array(
 				'nb_products' => null,
-				'cat_products' => &$newProducts,
+				'cat_products' => &$newProducts
 			)
 		);
 
