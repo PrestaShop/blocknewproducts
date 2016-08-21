@@ -101,6 +101,14 @@ class BlockNewProducts extends Module
 		if (Configuration::get('PS_NB_DAYS_NEW_PRODUCT'))
 			$newProducts = Product::getNewProducts((int) $this->context->language->id, 0, (int)Configuration::get('NEW_PRODUCTS_NBR'));
 
+		Hook::exec(
+			'actionProductListModifier',
+			array(
+				'nb_products' => null,
+				'cat_products' => &$newProducts
+			)
+		);
+
 		if (!$newProducts && Configuration::get('PS_BLOCK_NEWPRODUCTS_DISPLAY'))
 			return;
 		return $newProducts;
