@@ -103,6 +103,10 @@ class BlockNewProducts extends Module
 
 		if (!$newProducts && Configuration::get('PS_BLOCK_NEWPRODUCTS_DISPLAY'))
 			return;
+			
+		if (version_compare(_PS_VERSION_, '1.6.0', '>=') === true)
+			$this->context->controller->addColorsToProductList($newProducts);	
+			
 		return $newProducts;
 	}
 
