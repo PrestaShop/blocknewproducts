@@ -171,7 +171,7 @@ class BlockNewProducts extends Module
 		if (isset($this->context->controller->php_self) && $this->context->controller->php_self == 'index')
 			$this->context->controller->addCSS(_THEME_CSS_DIR_.'product_list.css');
 
-		$this->context->controller->addCSS($this->_path.'blocknewproducts.css', 'all');
+		$this->context->controller->addCSS($this->_path.'css/blocknewproducts.css', 'all');
 	}
 
 	public function hookAddProduct($params)
