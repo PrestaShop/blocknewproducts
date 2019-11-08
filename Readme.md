@@ -10,4 +10,4 @@ It has been remade for PrestaShop 1.7: https://github.com/PrestaShop/ps_newprodu
 
 ## About
 
-Displays a block featuring your store\'s newest products in PrestaShop 1.6.
+Displays a block featuring your store's newest products in PrestaShop 1.6.
